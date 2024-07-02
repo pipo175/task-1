@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        /* Styles for layout and presentation */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .product-video {
+            grid-column: span 2;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .product-video iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .product-details {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .price {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+        .description {
+            font-size: 16px;
+            color: #666;
+        }
+        /* Styles for responsive design */
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .product-video {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-video">
+            <iframe width="560" height="315" src="كم سهرنا من ليالى الصباح لا ننم --(480P).mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="product-details">
+            <h1>Product Title</h1>
+            <div class="price">
+                <span class="old-price">$100</span> <span class="new-price">$80</span>
+            </div>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ultricies libero. 
+                Sed vehicula magna at mi consectetur, vitae suscipit justo aliquet. 
+                Quisque sit amet tincidunt nisi.
+            </p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        function addToCart() {
+            alert('Product added to cart!');
+            // Add logic to actually add the product to the cart
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page </title>
+    <style>body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+    .nav-links li {
+        margin-right: 20px;
+    }
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .logo {
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .burger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .line {
+        height: 3px;
+        width: 25px;
+        background-color: #fff;
+        margin: 3px 0;
+    }
+    .logo {
+        height: 10px;
+        width: 10px;
+        color: aqua;
+    }
+    .body {
+        min-height: 100vh;
+        background-image: url(hack.jpeg);
+
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><i>Anonymos</i></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <script>
+        const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
+});
+
+    </script>
+</body>
+</html>
