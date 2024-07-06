@@ -1,0 +1,67 @@
+<!-- CSS Flexbox Cheat Sheet
+Parent (Container)
+display
+
+display: flex; — Defines a flex container and enables flex context for all its direct children.
+flex-direction
+
+flex-direction: row; — Default value. Items are placed in a row, horizontally.
+flex-direction: row-reverse; — Items are placed in a row, but in reverse order.
+flex-direction: column; — Items are placed in a column, vertically.
+flex-direction: column-reverse; — Items are placed in a column, but in reverse order.
+flex-wrap
+
+flex-wrap: nowrap; — Default value. Items are not wrapped.
+flex-wrap: wrap; — Items will wrap onto multiple lines.
+flex-wrap: wrap-reverse; — Items will wrap onto multiple lines, but in reverse order.
+flex-flow
+
+flex-flow: <flex-direction> <flex-wrap>; — Shorthand for flex-direction and flex-wrap.
+justify-content
+
+justify-content: flex-start; — Default value. Items are packed at the start of the container.
+justify-content: flex-end; — Items are packed at the end of the container.
+justify-content: center; — Items are centered along the line.
+justify-content: space-between; — Items are evenly distributed; first item is at the start, last item at the end.
+justify-content: space-around; — Items are evenly distributed with equal space around them.
+justify-content: space-evenly; — Items are evenly distributed with equal space between them.
+align-items
+
+align-items: stretch; — Default value. Items are stretched to fill the container.
+align-items: flex-start; — Items are aligned at the start of the container.
+align-items: flex-end; — Items are aligned at the end of the container.
+align-items: center; — Items are centered in the container.
+align-items: baseline; — Items are aligned at their baselines.
+align-content
+
+align-content: stretch; — Default value. Lines are stretched to take up the remaining space.
+align-content: flex-start; — Lines are packed at the start of the container.
+align-content: flex-end; — Lines are packed at the end of the container.
+align-content: center; — Lines are centered in the container.
+align-content: space-between; — Lines are evenly distributed; first line is at the start, last line at the end.
+align-content: space-around; — Lines are evenly distributed with equal space around them.
+align-content: space-evenly; — Lines are evenly distributed with equal space between them.
+Children (Items)
+order
+
+order: <integer>; — Defines the order of the item relative to the rest. Default is 0.
+flex-grow
+
+flex-grow: <number>; — Defines the ability for a flex item to grow if necessary. Default is 0.
+flex-shrink
+
+flex-shrink: <number>; — Defines the ability for a flex item to shrink if necessary. Default is 1.
+flex-basis
+
+flex-basis: <length> | auto; — Defines the initial main size of the flex item. Default is auto.
+flex
+
+flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]; — Shorthand for flex-grow, flex-shrink, and flex-basis. Default is 0 1 auto.
+align-self
+
+align-self: auto; — Default value. Inherits from align-items of the parent container.
+align-self: flex-start; — Aligns the item at the start of the container.
+align-self: flex-end; — Aligns the item at the end of the container.
+align-self: center; — Centers the item in the container.
+align-self: baseline; — Aligns the item at its baseline.
+align-self: stretch; — Stretches the item to fill the container. -->
