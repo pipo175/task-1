@@ -177,7 +177,6 @@ section .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80%;
 }
 section .row .col{
     background-color: var(--light-color);
@@ -187,7 +186,15 @@ section .row .col{
     margin-right: 2rem;
     border-radius: 1.8rem;
     box-shadow: -1px -1px 1px;
-    width: 50%;
+    
+}
+
+section .row .col:nth-child(1){
+    position: relative;
+    top: 7rem;
+    left: 7rem;
+    z-index: -1;
+    position: relative;
 }
 
 section .row .col h2{
